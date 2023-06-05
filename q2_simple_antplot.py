@@ -24,6 +24,10 @@ from tqdm import tqdm
 # pdb, ipdb for debugging from console
 # find way to open debug upon error?
 
+# PROJECT_REGEX = re.compile in module scope to save compiling time
+# table = table[["RAJ2000", "DECJ2000"]]; table["PROJECT"] = [project] * len(table)
+# np/astropy unique; table.group_by
+
 
 def get_raj_decj_data(filepath: str):
     """Returns the RA and DEC data from a given FITS file"""
